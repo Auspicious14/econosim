@@ -16,6 +16,7 @@ import {
   Zap,
   Leaf
 } from 'lucide-react';
+import Image from 'next/image';
 
 // ============================================================================
 // TYPE DEFINITIONS
@@ -478,9 +479,7 @@ export default function EconoSim() {
         {/* Navigation */}
         <nav className="py-8 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/20">
-              <Target className="text-white w-6 h-6" />
-            </div>
+            <Image src="/logo.png" alt="EconoSim" width={40} height={40} />
             <span className="text-2xl font-black tracking-tighter text-white">ECONO<span className="text-purple-400">SIM</span></span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
@@ -773,7 +772,7 @@ export default function EconoSim() {
       {/* Footer */}
       <footer className="max-w-6xl mx-auto px-6 mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-500 text-sm">
         <div className="flex items-center gap-2 grayscale brightness-50">
-          <Target className="w-5 h-5" />
+          <Image src="/logo.png" alt="EconoSim" width={40} height={40} />
           <span className="font-bold tracking-tighter text-white">ECONOSIM</span>
         </div>
         <div>© 2026 EconoSim Intelligence Lab. Educational purposes only.</div>
