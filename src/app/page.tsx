@@ -114,34 +114,34 @@ const SCENARIOS: Scenario[] = [
       { name: 'investmentReturn', label: 'Target Portfolio Return', type: 'number', defaultValue: 18, min: 5, max: 40, suffix: '% p.a.' }
     ]
   },
-  {
-    id: 'minimum-wage',
-    title: 'Minimum Wage Dynamics',
-    description: 'Simulate the macroeconomic effects of raising minimum wage on employment and purchasing power.',
-    category: 'policy',
-    icon: <TrendingUp className="w-6 h-6" />,
-    color: 'rose',
-    parameters: [
-      { name: 'currentWage', label: 'Current Base Wage', type: 'number', defaultValue: 70000, min: 30000, max: 150000, suffix: '₦' },
-      { name: 'increasePercent', label: 'Proposed Increase', type: 'number', defaultValue: 50, min: 10, max: 200, suffix: '%' },
-      { name: 'affectedWorkers', label: 'Target Workforce', type: 'number', defaultValue: 1000000, min: 100000, max: 10000000, suffix: 'people' },
-      { name: 'employmentElasticity', label: 'Labor Demand Elasticity', type: 'number', defaultValue: -0.2, min: -1.0, max: 0, suffix: '' }
-    ]
-  },
-  {
-    id: 'student-loan',
-    title: 'Education ROI Analysis',
-    description: 'Compare taking a student loan for immediate study versus working to save for tuition later.',
-    category: 'investment',
-    icon: <Target className="w-6 h-6" />,
-    color: 'amber',
-    parameters: [
-      { name: 'tuitionCost', label: 'Total Tuition', type: 'number', defaultValue: 4000000, min: 500000, max: 20000000, suffix: '₦' },
-      { name: 'loanInterestRate', label: 'Loan Annual Interest', type: 'number', defaultValue: 12, min: 0, max: 25, suffix: '%' },
-      { name: 'repaymentYears', label: 'Repayment Period', type: 'number', defaultValue: 10, min: 3, max: 20, suffix: 'years' },
-      { name: 'workingSalary', label: 'Current Working Salary', type: 'number', defaultValue: 150000, min: 50000, max: 1000000, suffix: '₦/mo' }
-    ]
-  }
+  // {
+  //   id: 'minimum-wage',
+  //   title: 'Minimum Wage Dynamics',
+  //   description: 'Simulate the macroeconomic effects of raising minimum wage on employment and purchasing power.',
+  //   category: 'policy',
+  //   icon: <TrendingUp className="w-6 h-6" />,
+  //   color: 'rose',
+  //   parameters: [
+  //     { name: 'currentWage', label: 'Current Base Wage', type: 'number', defaultValue: 70000, min: 30000, max: 150000, suffix: '₦' },
+  //     { name: 'increasePercent', label: 'Proposed Increase', type: 'number', defaultValue: 50, min: 10, max: 200, suffix: '%' },
+  //     { name: 'affectedWorkers', label: 'Target Workforce', type: 'number', defaultValue: 1000000, min: 100000, max: 10000000, suffix: 'people' },
+  //     { name: 'employmentElasticity', label: 'Labor Demand Elasticity', type: 'number', defaultValue: -0.2, min: -1.0, max: 0, suffix: '' }
+  //   ]
+  // },
+  // {
+  //   id: 'student-loan',
+  //   title: 'Education ROI Analysis',
+  //   description: 'Compare taking a student loan for immediate study versus working to save for tuition later.',
+  //   category: 'investment',
+  //   icon: <Target className="w-6 h-6" />,
+  //   color: 'amber',
+  //   parameters: [
+  //     { name: 'tuitionCost', label: 'Total Tuition', type: 'number', defaultValue: 4000000, min: 500000, max: 20000000, suffix: '₦' },
+  //     { name: 'loanInterestRate', label: 'Loan Annual Interest', type: 'number', defaultValue: 12, min: 0, max: 25, suffix: '%' },
+  //     { name: 'repaymentYears', label: 'Repayment Period', type: 'number', defaultValue: 10, min: 3, max: 20, suffix: 'years' },
+  //     { name: 'workingSalary', label: 'Current Working Salary', type: 'number', defaultValue: 150000, min: 50000, max: 1000000, suffix: '₦/mo' }
+  //   ]
+  // }
 ];
 
 // ============================================================================
@@ -530,7 +530,7 @@ export default function EconoSim() {
               <div className="space-y-8">
                 <div className="flex items-end justify-between">
                   <h2 className="text-2xl font-bold text-white">Select a Simulation</h2>
-                  <span className="text-sm text-slate-500">5 High Impact Models Available</span>
+                  <span className="text-sm text-slate-500">3 High Impact Models Available</span>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {SCENARIOS.map((s, i) => (

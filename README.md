@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EconoSim
 
-## Getting Started
+![EconoSim Banner](public/logo.png)
 
-First, run the development server:
+> **Visualize the Hidden Math of Everyday Decisions.**
+
+EconoSim is an advanced interactive simulator designed to reveal the invisible economic forces shaping your financial reality. From the compounding cost of food delivery to the long-term wealth erosion of high-interest installments, EconoSim transforms abstract economic principles into concrete, navigable data.
+
+## 🎯 Mission
+
+Most financial mistakes happen because humans aren't wired to calculate opportunity cost, compound interest, and risk premiums in real-time. EconoSim bridges this gap by providing a sandbox where users can tweak variables and instantly see the short-term vs. long-term impact of their choices.
+
+## ✨ Key Features
+
+- **Dynamic Economic Engine**: Real-time calculations for compound interest, loan optimizations, and opportunity cost analysis.
+- **Scenario Modeling**:
+  - 📱 **Phone Purchase Strategy**: Upfront vs. Installment trade-offs.
+  - 🛵 **The Delivery Dilemma**: The true cost of convenience over time.
+  - 🛡️ **Safety Net Calibration**: Emergency fund liquidity vs. market exposure.
+  - 📈 **Macro Policy**: Minimum wage elasticity impacts.
+  - 🎓 **Education ROI**: Student loan leverage vs. workforce entry.
+- **Premium Experience**:
+  - Immersive dark-mode aesthetics with glassmorphism.
+  - Fluid animations powered by Framer Motion.
+  - Responsive, touch-ready design.
+
+## 🛠 Tech Stack
+
+Built with a focus on performance, type safety, and modern design patterns.
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: TypeScript
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: [Outfit](https://fonts.google.com/specimen/Outfit)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.17 or later
+- npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+
+    ```bash
+    git clone https://github.com/yourusername/econosim.git
+    cd econosim
+    ```
+
+2.  **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  Open [http://localhost:3000](http://localhost:3000) (or the port shown in your terminal) to view the application.
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+├── app/
+│   ├── globals.css      # Design system & glassmorphism utilities
+│   ├── layout.tsx       # Root layout & SEO metadata
+│   ├── page.tsx         # Main simulation engine & UI components
+│   ├── icon.png         # App Favicon
+│   └── opengraph-image.png # Social Media Preview
+public/
+│   └── logo.png         # Brand Assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+Distributed under the MIT License. See `LICENSE` for more information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  Built with ❤️ by the <strong>EconoSim Intelligence Lab</strong>
+</p>
